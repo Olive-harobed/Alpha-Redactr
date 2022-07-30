@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+    <title>Alpha-Redactr</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <h2>make some magic here!!</h2>
+
+    <main>
+        
+        <h2>Alpha-Redactr</h2>
+        
+        <article>
+
+            <div class="inputBox">
+                <div>
+                    <textarea class="input textarea" id="main-texts" spellcheck="false" placeholder="Input text here"></textarea>
+                </div>
+                <div class="copyShare">
+                    <div><button id="copy-btn" class="btn">Copy</button></div>
+                    <div><button id="share-btn" class="btn">Share</button></div>
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <input class="input" type="text" id="redact-texts" autocomplete="off" placeholder="Input words to be scrambled here" />
+                <small style="color: white;">Seperate words with space</small>
+            </div>
+
+            <div class="inputBox">
+                <input class="input" type="text" id="sign" autocomplete="off" placeholder="Replacement (optional)">
+            </div>
+
+            <div class="inputBox btns">
+                <button id="return-btn" class="btn">Return</button>
+                <button id="redact-btn" class="btn">Redact Now</button>
+                <button id="clear-btn" class="btn">Clear</button>
+            </div>
+        </article>
+
+        <aside>
+
+            <h3>Stats</h3>
+
+            <div class="statRec">
+                <div>
+                    <span class="statName">Scanned word(s) : </span>
+                    <span class="statVal"><span id="scanned">0</span></span>
+                </div>
+
+                <div>
+                    <span class="statName">Matched word(s) : </span>
+                    <span class="statVal"><span id="matched">0</span></span>
+                </div>
+
+                <div>
+                    <span class="statName">Scrambled character(s) :</span>
+                    <span class="statVal"><span id="scrambled">0</span></span>
+                </div>
+
+                <div>
+                    <span class="statName">Execution time : </span>
+                    <span class="statVal timed">
+                        <span id="timed">0</span>
+                        <span>ms</span>
+                    </span>
+                </div>
+            </div>
+        </aside>
+
+        <footer>
+            <p>Built with 💓 by the Alpha-Redactr <a href="#">team</a>.</p>
+        </footer>
+
+    </main>
+
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
