@@ -38,8 +38,8 @@ function startApp() {
       let [scan, match, scramble] = redacting(main, redact);
   
         mainTexts.value = main.join(" ");
-        const endTime = Date.now();
-        let timeCompleted = `${endTime - startTime}`;
+        const endtime = Date.now();
+        let timeCompleted = `${endtime - startTime}`;
         stats(scan, match, scramble, timeCompleted);
     });
   
